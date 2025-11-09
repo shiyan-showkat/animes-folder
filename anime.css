@@ -72,7 +72,6 @@ li {
 
 a {
     text-decoration: none;
-    cursor: pointer;
 }
 
 .navlinks {
@@ -92,7 +91,6 @@ a {
     background: purple;
     color: white;
     border-radius: 40px;
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -108,14 +106,12 @@ a {
     border-radius: 50%;
     background-color: white;
     color: purple;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.4s ease;
 }
 
-/* Moon Hover Effect */
 #moon:hover {
     transform: rotate(25deg);
     box-shadow: 0 0 12px #a020f0;
@@ -254,9 +250,8 @@ p {
     margin-top: 20px;
 }
 
-.email-btn {
-    background-color: #a020f0;
-    color: white;
+.email-btn,
+.whatsapp-btn {
     padding: 12px 25px;
     border-radius: 30px;
     text-decoration: none;
@@ -264,14 +259,14 @@ p {
     transition: 0.3s;
 }
 
+.email-btn {
+    background-color: #a020f0;
+    color: white;
+}
+
 .whatsapp-btn {
     background-color: #25D366;
     color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
 }
 
 .email-btn:hover,
@@ -317,7 +312,6 @@ p {
     justify-content: center;
     font-size: 18px;
     transition: 0.3s;
-    cursor: pointer;
 }
 
 .footer-socials a:hover {
@@ -326,7 +320,7 @@ p {
     transform: scale(1.1);
 }
 
-/* Light Theme (toggle with JS) */
+/* Light Theme */
 body.theme {
     background: #fdfdfd;
     color: #111;
@@ -402,8 +396,10 @@ button,
     .classlist {
         flex-direction: column;
         position: absolute;
-        top: -100%;
-        left: 50%;
+        /* top: -100%;
+        left: 50%; */
+        right: 80%;
+
         transform: translateX(-50%);
         background-color: rgba(0, 0, 0, 0.432);
         backdrop-filter: blur(10px);
@@ -415,9 +411,21 @@ button,
         transition: 0.3s ease-in-out;
     }
 
+
+
+
     .classlist-active {
         top: 70%;
         left: 50%;
+        transition: 2s ease-in-out;
+    }
+
+    #p1 {
+        margin-left: 500px;
+    }
+
+    #h1 {
+        font-size: 75px;
     }
 
     .hamburger {
@@ -435,7 +443,6 @@ button,
         position: absolute;
         bottom: -99%;
         left: 100px;
-        right: auto;
     }
 
     .hero-section {
