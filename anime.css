@@ -421,7 +421,7 @@ button,
     }
 
     #p1 {
-        margin-left: 500px;
+        display: none;
     }
 
     #h1 {
