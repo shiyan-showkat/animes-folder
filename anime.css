@@ -431,6 +431,12 @@ button,
         /* top: -230px; */
     }
 
+    h1::after {
+        margin-left: 85px;
+        /* margin-top: 30px; */
+        /* margin-top: 300px; */
+    }
+
     .pro-footer {
         bottom: 0;
     }
